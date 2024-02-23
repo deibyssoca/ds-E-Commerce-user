@@ -39,7 +39,7 @@ func ConnStr(keys models.SecretRDSJson) string {
 	dbUser = keys.Username
 	authToken = keys.Password
 	dbEndpoint = keys.Host
-	dbName = "ds_aws_db_01" //TODO: pasar a variable de entorno
+	dbName = "ds-aws-db-01" //TODO: pasar a variable de entorno
 	dsn := fmt.Sprintf("%s:%s@tcp(%s)/%s?allowCleartextPasswords=true", dbUser, authToken, dbEndpoint, dbName)
 	fmt.Println(dsn)
 	return dsn
