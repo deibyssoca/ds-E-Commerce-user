@@ -5,6 +5,8 @@ import (
 	"fmt"
 	"os"
 
+	_ "github.com/go-sql-driver/mysql" // Importa el controlador MySQL
+
 	"github.com/deibyssoca/models"
 	"github.com/deibyssoca/secretm"
 )
